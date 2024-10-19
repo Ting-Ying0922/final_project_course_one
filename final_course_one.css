@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_container{
+    background-color: #3c85c4;
+    height: 120px;
+}
+
+.nav_area{
+    position: relative;
+    margin: 0;
+    padding: 0;  
+    display: inline-block; /* 使 nav_area 为行内块元素 */
+}
+
+.main_title{
+    display: inline-block;
+    margin-left: 15px;
+    white-space: nowrap; /* 強制不換行 */
+
+    font-size: 40px;
+    color: black;
+}
+
+.button {
+    display: inline-block;
+    margin: 0 40px;
+    position: relative;
+    left: 670px;
+} 
+
+.nav_area a {
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+.button a:link{
+    color: black;
+}
+
+.button a:visited{
+    color: rgb(255, 255, 255);
+}
+
+.button a:hover {
+    background-color: #00d9ff;
+}
+
+.button a:active {
+    background-color: #68819c;
+}
+
+#Services{
+    margin: 0;
+}
+
+
+.Services_container{
+    background-color:grey;
+    
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column; /* 使內容垂直排列 */
+    align-items: center; /* 中心對齊 */
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+.Services_container h3{
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+
+    flex-direction: column;
+    text-align: center;  
+}
+
+.images {
+    display: flex; 
+    justify-content: center; 
+}
+
+.images img {
+    width: 200px; 
+    height: 200px; 
+    margin: 0 50px;
+}
+
+.points {
+    display: flex;
+    justify-content: center; /* 水平居中對齊 */
+    margin: 20px 0; /* 上下邊距 */
+    gap: 170px;
+}
+
+.points li {
+    align-self: flex-end;
+    margin: 0 20px; /* 每個項目的左右邊距 */
+    font-size: 40px;
+}
+
+.points_content{
+    list-style-type: none; /* 去掉列表符號 */
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.points_content li{
+    width: 200px;
+    height: 200px;
+    margin: 10px 60px; /* 上下間距 */
+    padding: 10px; /* 可選：添加內邊距 */
+    border: solid 1px black; /* 可選：添加邊框 */
+}
+
+
+.foot_container{
+    background-color: rgb(1, 1, 27);
+    color:aliceblue;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.copyright{
+    font-size: 15px;
+}
+
+#Top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+
+    border: solid 1px #00b7ff;
+    border-radius: 5px;
+    
+    background-color:#00b7ff;
+    text-decoration: none;
+}

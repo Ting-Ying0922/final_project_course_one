@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平居中 */
+    min-height: 100vh; /* 至少填满视口高度 */
+    background-color: #f0f0f0;
+    margin: 0; 
+}
+
+.container {
+    text-align: center; /* 文本居中 */
+}
+
+p{
+    margin: 20px 0; 
+    font-size: 2em; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 两列 */
+    gap: 20px; /* 图片之间的间距 */
+    max-width: 600px; /* 限制图库最大宽度 */
+    width: 100%; /* 容器宽度填满 */
+}
+
+.photo {
+    position: relative;
+    overflow: hidden; /* 超出部分隐藏 */
+    background-color: white; 
+    border: 5px solid #ccc;  
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+}
+
+.photo img {
+    display: block; /* 去掉底部空白 */
+    width: 100%; /* 图片宽度填满父元素 */
+    height: auto; /* 高度自适应 */
+    transition: transform 0.3s; /* 鼠标悬停时的过渡效果 */
+}
+
+.photo:hover img {
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+#home{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+
+    border: solid 1px rgb(4, 102, 248);
+    border-radius: 5px;
+    
+    background-color:rgb(4, 102, 248);
+    text-decoration: none;
+}
