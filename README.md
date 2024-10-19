@@ -1,11 +1,10 @@
-# final_project_course_one
+# My final_project_course_one
 
-author & contributor: HUANG, TING-YING
+Author & Contributor: HUANG, TING-YING
 
-complete date: 19/Oct/2024
+Complete date: 19/Oct/2024
 
-# instruction
-
+# Project Structure
 - final_course_one.html
     - computers.png
     - happy.png
