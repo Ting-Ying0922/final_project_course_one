@@ -87,7 +87,7 @@ body{
 
 .images {
     display: flex; 
-    justify-content: center; 
+    align-self: center; 
 }
 
 .images img {
